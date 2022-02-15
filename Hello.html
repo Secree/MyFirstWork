@@ -1,25 +1,42 @@
 <html>
   <head>
     <style>
-      div {
-        text-align: center;
-        margin-top: 225px;
-        font-size: 70px;
-        color: blue;
-        animation-name: Hi;
-        animation-duration: 1.5s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-direction: normal;
-      }
+    body {
+      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRur4ojg8kOIshBYgYoECxcTOso32L3x130Dw&usqp=CAU);
+    }
+    
+    .header {
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FF0E8A;
+      border: 1px solid green;
+      background-color: #00FFFF;
+      padding: 15px;
+    }
+    
+    div {
+      text-align: center;
+      margin-top: 225px;
+      font-size: 60px;
+      animation-name: Hi;
+      animation-duration: 1.5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
       
-      @keyframes Hi {
-        0% { transform: rotate(0deg);}
-        100% { transform: rotate(360deg);}
-      }
+    @keyframes Hi {
+      0% { transform: rotate(0deg);
+           color: #FFF700;}
+      100% { transform: rotate(360deg);
+             color: #FF00AE;}
+    }
     </style>
   </head>
  <body>
+   <header class="header">This is my first work. Hope you all enjoy it!</header>
   <div>Hello World!</div>
  </body>
 </html>
