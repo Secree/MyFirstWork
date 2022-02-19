@@ -2,41 +2,106 @@
   <head>
     <style>
     body {
-      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRur4ojg8kOIshBYgYoECxcTOso32L3x130Dw&usqp=CAU);
+      background-color: forestgreen;
+    }
+  
+    .circles {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
     }
     
-    .header {
-      font-size: 22px;
-      font-weight: 700;
-      text-align: center;
-      text-transform: uppercase;
-      color: #FF0E8A;
-      border: 1px solid green;
-      background-color: #00FFFF;
-      padding: 15px;
-    }
-    
-    div {
-      text-align: center;
-      margin-top: 225px;
-      font-size: 60px;
-      animation-name: Hi;
-      animation-duration: 1.5s;
-      animation-timing-function: linear;
+    #nwcirc {
+      background-color: #FF0000;
+      position: relative;
+      top: 80px;
+      left: 70px;
+      animation-name: nwcircanim;
+      animation-duration: 3s;
       animation-iteration-count: infinite;
-      animation-direction: alternate;
+      animation-play-state: linear;
     }
-      
-    @keyframes Hi {
-      0% { transform: rotate(0deg);
-           color: #FFF700;}
-      100% { transform: rotate(360deg);
-             color: #FF00AE;}
+   
+   @keyframes nwcircanim {
+     0% {left: 70px; top: 80px;}
+     25% {left: 250px; top: 80px;}
+     50% {left: 250px; top: 280px;}
+     75% {left: 70px; top: 280px;}
+     100% {left: 70px; top: 80px;}
+   }
+   
+    #necirc {
+      background-color: #00FFFF;
+      position: relative;
+      top: 40px;
+      left: 250px;
+      animation-name: necircanim;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-play-state: linear;
     }
+    
+    @keyframes necircanim {
+      0% {left: 250px; top: 40px;}
+     25% {left: 250px; top: 240px;}
+     50% {left: 70px; top: 240px;}
+     75% {left: 70px; top: 40px;}
+     100% {left: 250px; top: 40px;}
+    }
+    
+    #swcirc {
+      background-color: #FF00FF;
+      position: relative;
+      top: 200px;
+      left: 70px;
+      animation-name: swcircanim;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-play-state: linear;
+    }
+    
+     @keyframes swcircanim {
+     0% {left: 70px; top: 200px;}
+     25% {left: 70px; top: 0px;}
+     50% {left: 250px; top: 0px;}
+     75% {left: 250px; top: 200px;}
+     100% {left: 70px; top: 200px;}
+    }
+    
+    #secirc {
+      background-color: #FFFF00;
+      position: relative;
+      top: 160px;
+      left: 250px;
+      animation-name: secircanim;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-play-state: linear;
+    }
+    
+      @keyframes secircanim {
+      0% {left: 250px; top: 160px;}
+     25% {left: 70px; top: 160px;}
+     50% {left: 70px; top: -40px;}
+     75% {left: 250px; top: -40px;}
+     100% {left: 250px; top: 160px;}
+    }
+    
     </style>
   </head>
  <body>
-   <header class="header">This is my first work. Hope you all enjoy it!</header>
-  <div>Hello World!</div>
+  <div class="circles"
+          id="nwcirc">
+  </div>
+  <div class="circles"
+          id="necirc">
+  </div>
+  <div class="circles"
+          id="swcirc">
+  </div>
+  <div class="circles"
+          id="secirc">
+  </div>
  </body>
 </html>
